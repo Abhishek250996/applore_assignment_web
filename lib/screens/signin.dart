@@ -56,7 +56,7 @@ class _SigninScreenState extends State<SigninScreen> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return new Scaffold(
-      backgroundColor: screenSize.width < 580 ? Colors.white: Colors.white,
+      backgroundColor: screenSize.width < 580 ? Colors.white: Colors.black,
       body: SingleChildScrollView(
         child: screenSize.width < 580 ? mobileApp(): webApp(),
       ),
@@ -255,7 +255,7 @@ class _SigninScreenState extends State<SigninScreen> {
             height: MediaQuery.of(context).size.height/1.8,
             color: Colors.black,
             child: Padding(
-              padding: const EdgeInsets.only(top:50.0),
+              padding: const EdgeInsets.only(top:20.0),
               child: ListView(
                 children: [
                   Padding(
